@@ -10,7 +10,7 @@
       "ref"  : "origin/master",
       "repo" : "git@github.com:samcello/hi.git",
       "path" : "/var/www/hi",
-      "post-deploy" : "npm install; pm2 delete all; pm2 start server/index.js --name 'hi' --log-type json --watch -f",
+      "post-deploy" : "npm install; pm2 delete all; pm2 start --interpreter babel-node server/index.js --name 'hi' --log-type json --watch -f",
       "env"  : {
         "NODE_ENV": "production"
       }
