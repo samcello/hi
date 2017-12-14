@@ -2,7 +2,7 @@
     "presets": ["env"],
     "plugins": [
 	    ["transform-strict-mode", {
-	      "strict": false
+	      "strict": true
 	    }]
 	  ]
 }
