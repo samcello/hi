@@ -1,0 +1,19 @@
+{
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : ["39.106.139.136"],
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:samcello/hi.git",
+      "path" : "/var/www/hi",
+      "post-deploy" : "npm install; pm2 delete all; pm2 start server/index.js --name 'hi' --log-type json --watch -f",
+      "env"  : {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

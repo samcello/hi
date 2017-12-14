@@ -1,0 +1,31 @@
+{
+  "name": "hi",
+  "version": "1.0.0",
+  "description": "qunahi",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node ./server/index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samcello/hi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samcello/hi/issues"
+  },
+  "homepage": "https://github.com/samcello/hi#readme",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "koa-sslify": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.12.7"
+  }
+}
